@@ -1,0 +1,432 @@
+
+/*PRESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+
+    font-family: 'Share Tech Mono', monospace;
+    background: #2A2A2A;
+ }
+
+ .span-1 {
+     color: #a259ff;
+ }
+
+ .span-2 {
+     color: #5CE1E6;
+ }
+
+ .span-3{
+    color: #FF4ECD;
+ }
+
+ a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ li{
+    list-style-type: none;
+ }
+
+ /*PORTFOLIO CARD BASIC SETTINGS*/
+
+ .portfolio-card{
+   width: 65%;
+    color: #f8f8ff;
+    max-width: 1000px;
+    margin: 0 17em;
+    display: flex;
+    flex-direction: column; 
+ }
+
+ .up{
+    background-color: #0A001F;
+    height: 40px;
+ }
+
+ .down{
+    background: linear-gradient(to bottom, #0D0D2B, #120A25);
+    height: 100%;
+ }
+
+/*NAVBAR*/
+
+#navbar{
+    padding: 15px 0; 
+    display: flex;
+}
+
+#navbar h2{
+    margin-left: 15px;
+    width: 60%;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li {
+    padding-right: 15px;
+}
+
+#navbar a:hover{
+    border: 3px solid #a259ff;
+    background: #a259ff;
+}
+
+/*HEADER*/
+
+.head{
+    text-align: center;
+    margin-top: 1em;
+}
+
+ #head-text {
+     line-height: 1.5;
+     margin-bottom: 15px;
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+
+
+ .head-btn{
+    border: 5px #2c2c2e solid;
+    background-color: #2c2c2e;
+ }
+
+ .head a:hover{
+    border: 5px solid #5CE1E6;
+    background-color: #5CE1E6;
+ }
+
+/*ABOUT SECTION*/
+
+ #about-me h3{
+    margin-top: 8em;
+    text-align: center;
+ }
+
+ .about-section{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+ }
+
+ .about-img{
+    padding-left: 15em;
+ }
+
+
+ .about-txt{
+   padding-right: 10em;
+
+ }
+
+ .about-txt a:hover {
+     border: 5px solid #5CE1E6;
+     background-color: #5CE1E6;
+ }
+
+ .about-txt h3{
+    margin-bottom: 15px;
+ }
+
+ .about-txt a{
+    border: 5px #2c2c2e solid ;
+    background-color: #2c2c2e;
+ }
+
+ #experience{
+    display: flex;
+    margin-top: 10px;
+ }
+
+ #experience h4{
+    font-size: 20px;
+ }
+
+ .experience-1{
+    width: 50%;
+    margin-right: 10px;
+ }
+
+/*ACADEMIC JOURNEY*/
+
+ .certification{
+    margin-top: 50px;
+    text-align: center;
+ }
+
+ .certification h2{
+    margin-bottom: 30px;
+ }
+
+ .academic-journey{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 0 25px;
+ }
+
+ .education{
+    border: 3px solid #151515;
+    background-color: #151515;
+    text-align: left;
+ }
+
+
+ /*TOOLS AND SKILLS*/
+
+#proficiency{
+    margin-top: 50px;
+}
+
+#proficiency h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.majors{
+    display: flex;
+    margin-left: 13em;
+    margin-bottom: 30px;
+}
+
+.majors-link{
+    margin-left: 15px;
+    border: 10px solid #2C2C2E;
+    background-color: #2C2C2E;
+    border-radius: 10%;
+    
+}
+
+.present{
+    border: 10px solid #a259ff;
+    background-color: #a259ff;
+    border-radius: 10%;
+    margin-left: 15px;
+}
+
+.majors a:hover{
+    border: 10px solid #a259ff;
+    background-color: #a259ff;
+    border-radius: 10%;
+}
+
+.tool{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+
+.tools{
+    margin-bottom: 20px;
+}
+
+.tools li{
+    margin-top: 20px;
+}
+
+.skills {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.skill-up{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.skill-up h4{
+    width:50%;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.skill-up h3 {
+        padding-left: 200px;
+        margin-top: 15px;
+}
+
+.skill-down{
+    display: flex;
+}
+
+.skill-1{
+    border: 5px solid #a259ff;
+    background: #a259ff;
+    width: 80%;
+}
+
+.skill-2{
+    border: 5px solid #2C2C2E;
+    background: #2C2C2E;
+    width: 20%;
+}
+
+.skill-3 {
+    border: 5px solid #a259ff;
+    background: #a259ff;
+    width: 70%;
+}
+
+.skill-4 {
+    border: 5px solid #2C2C2E;
+    background: #2C2C2E;
+    width: 30%;
+}
+
+.skill-5 {
+    border: 5px solid #a259ff;
+    background: #a259ff;
+    width: 60%;
+}
+
+.skill-6 {
+    border: 5px solid #2C2C2E;
+    background: #2C2C2E;
+    width: 40%;
+}
+
+.skill-7 {
+    border: 5px solid #a259ff;
+    background: #a259ff;
+    width: 55%;
+}
+
+.skill-8 {
+    border: 5px solid #2C2C2E;
+    background: #2C2C2E;
+    width: 45%;
+}
+
+.skill-9 {
+    border: 5px solid #a259ff;
+    background: #a259ff;
+    width: 55%;
+}
+
+.skill-10 {
+    border: 5px solid #2C2C2E;
+    background: #2C2C2E;
+    width: 45%;
+}
+
+/*.skill-11 {
+    border: 5px solid #a259ff;
+    background: #a259ff;
+    width: 55%;
+}
+
+.skill-12 {
+    border: 5px solid #2C2C2E;
+    background: #2C2C2E;
+    width: 45%;
+}
+
+.skill-13 {
+    border: 5px solid #a259ff;
+    background: #a259ff;
+    width: 55%;
+}
+
+.skill-14 {
+    border: 5px solid #2C2C2E;
+    background: #2C2C2E;
+    width: 45%;
+}
+
+.skill-15 {
+    border: 5px solid #a259ff;
+    background: #a259ff;
+    width: 55%;
+}
+
+.skill-16 {
+    border: 5px solid #2C2C2E;
+    background: #2C2C2E;
+    width: 45%;
+} */
+
+.footer{
+    margin: 50px;
+}
+
+ /*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+    .portfolio-card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .down{
+        height: auto;
+    }
+
+    .navbar{
+           flex-direction: column;
+    }
+
+    .nav-links{
+        width: auto;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    .nav-links li {
+        padding-right: 10px;
+        font-size: 15px;
+    }
+
+    .about-section{
+        grid-template-columns: 1fr;
+    }
+
+    .about-img {
+        padding-left: 1em;
+        margin-bottom: 15px;
+    }
+
+    .about-txt {
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+
+    .academic-journey {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .majors{
+        margin-left: 15px;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
+
+    .majors li{
+        margin-bottom: 10px;
+    }
+
+    .tool {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+        }
+}
