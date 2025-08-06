@@ -6,7 +6,7 @@ Live Preview
 View Portfolio Here
 (Update with your live link)
 
-🖥️ Project Overview
+Project Overview
 This project features:
 
 A Portfolio Landing Card that highlights my profile picture, name, role, and a brief intro.
@@ -17,16 +17,7 @@ Fully responsive design that looks great on desktop, tablet, and mobile screens.
 
 Built purely with HTML & CSS (No frameworks).
 
-📂 Folder Structure
-bash
-Copy
-Edit
-/portfolio-card/
-│
-├── index.html
-├── style.css
-└── README.md
-🛠️ Technologies Used
+Technologies Used
 HTML5
 
 CSS3
