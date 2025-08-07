@@ -4,7 +4,7 @@ Welcome to my Portfolio Card Project, a sleek, minimalist personal portfolio des
 
 Live Preview
 View Portfolio Here
-(Update with your live link)
+(https://portfolio-card-nine.vercel.app/)
 
 Project Overview
 This project features:
