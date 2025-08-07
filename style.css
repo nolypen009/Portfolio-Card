@@ -206,14 +206,11 @@
     margin-left: 15px;
     border: 10px solid #2C2C2E;
     background-color: #2C2C2E;
-    border-radius: 10%;
-    
 }
 
 .present{
     border: 10px solid #a259ff;
     background-color: #a259ff;
-    border-radius: 10%;
     margin-left: 15px;
 }
 
@@ -365,68 +362,293 @@
 
  /*MEDIA QUERIES*/
 
-@media (max-width: 768px) {
+/* Mobile first (default styles) */
+/* Your base styles above already cover mobile-first design */
+
+/* Small phones */
+@media (max-width: 599px) {
     .portfolio-card {
         width: 100%;
+        max-width: 100%;
         margin: 0;
+        padding: 0 0.15em;
     }
 
-    .down{
-        height: auto;
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 6px 0;
     }
 
-    .navbar{
-           flex-direction: column;
-    }
-
-    .nav-links{
-        width: auto;
-        padding-left: 15px;
-        padding-top: 15px;
+    .nav-links {
+        width: 100%;
+        padding-left: 5px;
+        padding-top: 6px;
+        flex-direction: column;
     }
 
     .nav-links li {
-        padding-right: 10px;
-        font-size: 15px;
+        padding-right: 0;
+        padding-bottom: 6px;
+        font-size: 13px;
     }
 
-    .about-section{
+    .about-section {
         grid-template-columns: 1fr;
+        padding: 0 0.25em;
     }
 
     .about-img {
-        padding-left: 1em;
-        margin-bottom: 15px;
+        padding-left: 0;
+        margin: 0 auto 8px auto;
+        display: block;
+        max-width: 120px;
+        width: 100%;
     }
 
     .about-txt {
-        padding-right: 5em;
-        padding-left: 5em;
+        padding: 0 0.25em;
     }
 
     .academic-journey {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 0.25em;
+    }
+
+    .majors {
+        margin-left: 0;
+        gap: 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 20px;
+        justify-items: start;
     }
 
-    .majors{
-        margin-left: 15px;
-        gap: 20px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto;
+    .majors li {
+        margin-bottom: 6px;
     }
 
-    .majors li{
-        margin-bottom: 10px;
+    #proficiency {
+        margin: 0.25em 0.25em;
     }
 
     .tool {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0 0.25em;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .portfolio-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 1em;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        padding-left: 15px;
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        padding-right: 0;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        padding: 0 1em;
+    }
+
+    .about-img {
+        padding-left: 0;
+        margin: 0 auto 15px auto;
+        display: block;
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .about-txt {
+        padding: 0 1em;
+    }
+
+    .academic-journey {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 1em;
+    }
+
+    .majors {
+        margin-left: 0;
+        gap: 10px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        justify-items: start;
+    }
+
+    .majors li {
+        margin-bottom: 10px;
+    }
+
+    #proficiency {
+        margin: 1em 1em;
+    }
+
+    .tool {
+        grid-template-columns: 1fr;
         text-align: center;
-        }
+        padding: 0 1em;
+    }
+}
+
+/* Laptops */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .portfolio-card {
+        width: 80%;
+        max-width: 900px;
+        margin: 0 5em;
+        padding: 0 2em;
+    }
+
+    #navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        width: auto;
+        padding-left: 0;
+        padding-top: 0;
+        flex-direction: row;
+    }
+
+    .nav-links li {
+        padding-right: 15px;
+        padding-bottom: 0;
+        font-size: 16px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2em;
+    }
+
+    .about-img {
+        padding-left: 5em;
+        margin-bottom: 0;
+        max-width: 250px;
+    }
+
+    .about-txt {
+        padding: 0 2em;
+    }
+
+    .academic-journey {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 0 2em;
+    }
+
+    .majors {
+        margin-left: 5em;
+        gap: 15px;
+        display: flex;
+    }
+
+    .majors li {
+        margin-bottom: 0;
+    }
+
+    #proficiency {
+        margin: 2em 2em;
+    }
+
+    .tool {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding: 0 2em;
+    }
+}
+
+/* Desktops & large screens */
+@media (min-width: 1440px) {
+    .portfolio-card {
+        width: 65%;
+        max-width: 1000px;
+        margin: 0 17em;
+        padding: 0 3em;
+    }
+
+    #navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        width: auto;
+        padding-left: 0;
+        padding-top: 0;
+        flex-direction: row;
+    }
+
+    .nav-links li {
+        padding-right: 15px;
+        padding-bottom: 0;
+        font-size: 17px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 3em;
+    }
+
+    .about-img {
+        padding-left: 15em;
+        margin-bottom: 0;
+        max-width: 300px;
+    }
+
+    .about-txt {
+        padding: 0 3em;
+    }
+
+    .academic-journey {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0 3em;
+    }
+
+    .majors {
+        margin-left: 13em;
+        gap: 20px;
+        display: flex;
+    }
+
+    .majors li {
+        margin-bottom: 0;
+    }
+
+    #proficiency {
+        margin: 3em 3em;
+    }
+
+    .tool {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding: 0
+    }
 }
