@@ -198,25 +198,24 @@
 
 .majors{
     display: flex;
-    margin-left: 13em;
+    flex-direction: row;
     margin-bottom: 30px;
 }
 
 .majors-link{
-    margin-left: 15px;
-
     background-color: #2C2C2E;
+    border: 10px solid #2C2C2E;
 }
 
 .present{
-    border: 10px solid #a259ff;
-    background-color: #a259ff;
-    margin-left: 15px;
+    border: 10px solid #000;
+    background-color: #000;
 }
 
 .majors a:hover{
     background-color: #a259ff;
-    border-radius: 10%;
+    border-radius: 50px;
+    border: 10px solid #a259ff;
 }
 
 .tool{
