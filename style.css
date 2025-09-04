@@ -57,14 +57,25 @@
 
 /*NAVBAR*/
 
-#navbar{
-    padding: 15px 0; 
+.navbar{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    width: auto;
 }
 
-#navbar h2{
+.navbar h2{
     margin-left: 15px;
-    width: 60%;
+    
+}
+
+.menu-icon{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 .nav-links{
@@ -75,7 +86,7 @@
     padding-right: 15px;
 }
 
-#navbar a:hover{
+.navbar a:hover{
     border: 3px solid #a259ff;
     background: #a259ff;
 }
@@ -88,6 +99,7 @@
 }
 
  #head-text {
+    padding: 50px;
      line-height: 1.5;
      margin-bottom: 15px;
      font-size: 24px;
@@ -218,6 +230,15 @@
     border: 10px solid #a259ff;
 }
 
+.small-screen{
+    display: none;
+    font-size: 28px;
+}
+
+.majors-icon{
+    cursor: pointer;
+}
+
 .tool{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -225,8 +246,15 @@
     text-align: center;
 }
 
+.tool-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .tools{
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .tools li{
@@ -318,52 +346,12 @@
     width: 45%;
 }
 
-/*.skill-11 {
-    border: 5px solid #a259ff;
-    background: #a259ff;
-    width: 55%;
-}
-
-.skill-12 {
-    border: 5px solid #2C2C2E;
-    background: #2C2C2E;
-    width: 45%;
-}
-
-.skill-13 {
-    border: 5px solid #a259ff;
-    background: #a259ff;
-    width: 55%;
-}
-
-.skill-14 {
-    border: 5px solid #2C2C2E;
-    background: #2C2C2E;
-    width: 45%;
-}
-
-.skill-15 {
-    border: 5px solid #a259ff;
-    background: #a259ff;
-    width: 55%;
-}
-
-.skill-16 {
-    border: 5px solid #2C2C2E;
-    background: #2C2C2E;
-    width: 45%;
-} */
 
 .footer{
     margin: 50px;
 }
 
- /*MEDIA QUERIES*/
 
-/* Mobile first (default styles) */
-/* Your base styles above already cover mobile-first design */
-
-/* Small phones */
 @media (max-width: 599px) {
     .portfolio-card {
         width: 100%;
@@ -372,23 +360,33 @@
         padding: 0 0.15em;
     }
 
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 6px 0;
-    }
-
     .nav-links {
         width: 100%;
         padding-left: 5px;
         padding-top: 6px;
         flex-direction: column;
+        display: none;
+        background: #444;
+        border-radius: 5px;
     }
 
     .nav-links li {
         padding-right: 0;
         padding-bottom: 6px;
         font-size: 13px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li.show:hover{
+        border: 5px solid #a259ff;
+        background-color: #a259ff;
+    }
+    
+    .menu-icon {
+        display: block;
     }
 
     .about-section {
@@ -415,30 +413,54 @@
     }
 
     .majors {
-        margin-left: 0;
-        gap: 6px;
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: start;
+        width: 100%;
+        padding-left: 5px;
+        padding-top: 6px;
+        flex-direction: column;
+        display: none;
+        background: #444;
+        border-radius: 5px;
     }
 
     .majors li {
-        margin-bottom: 6px;
+        padding: 20px;
+        font-size: 13px;
     }
 
-    #proficiency {
-        margin: 0.25em 0.25em;
+    .majors.display {
+        display: flex;
     }
+
+    .majors-icon {
+        display: block;
+    }
+
+    .majors li.display:hover{
+        border: 5px solid #a259ff;
+        background-color: #a259ff;
+        }
+
+    .small-screen{
+        display: flex;
+        flex-direction: row;
+    }
+
 
     .tool {
         grid-template-columns: 1fr;
         text-align: center;
         padding: 0 0.25em;
     }
+
+        .tool h3 {
+            text-align: left;
+            padding-left: 20px;
+            font-size: 28px;
+        }
 }
 
-/* Tablets */
-@media (min-width: 600px) and (max-width: 1023px) {
+
+@media (min-width: 600px) and (max-width: 900px) {
     .portfolio-card {
         width: 100%;
         max-width: 100%;
@@ -446,24 +468,34 @@
         padding: 0 1em;
     }
 
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 0;
-    }
-
-    .nav-links {
-        width: 100%;
-        padding-left: 15px;
-        padding-top: 10px;
-        flex-direction: column;
-    }
-
-    .nav-links li {
-        padding-right: 0;
-        padding-bottom: 10px;
-        font-size: 15px;
-    }
+        .nav-links {
+            width: 100%;
+            padding-left: 5px;
+            padding-top: 6px;
+            flex-direction: column;
+            display: none;
+            background: #444;
+            border-radius: 5px;
+        }
+    
+        .nav-links li {
+            padding-right: 0;
+            padding-bottom: 6px;
+            font-size: 13px;
+        }
+    
+        .nav-links.show {
+            display: flex;
+        }
+    
+        .nav-links li.show:hover {
+            border: 5px solid #a259ff;
+            background-color: #a259ff;
+        }
+    
+        .menu-icon {
+            display: block;
+        }
 
     .about-section {
         grid-template-columns: 1fr;
@@ -488,17 +520,38 @@
         padding: 0 1em;
     }
 
-    .majors {
-        margin-left: 0;
-        gap: 10px;
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: start;
-    }
-
-    .majors li {
-        margin-bottom: 10px;
-    }
+        .majors {
+            width: 100%;
+            padding-left: 5px;
+            padding-top: 6px;
+            flex-direction: column;
+            display: none;
+            background: #444;
+            border-radius: 5px;
+        }
+    
+        .majors li {
+            padding: 20px;
+            font-size: 13px;
+        }
+    
+        .majors.display {
+            display: flex;
+        }
+    
+        .majors-icon {
+            display: block;
+        }
+    
+        .majors li.display:hover {
+            border: 5px solid #a259ff;
+            background-color: #a259ff;
+        }
+    
+        .small-screen {
+            display: flex;
+            flex-direction: row;
+        }
 
     #proficiency {
         margin: 1em 1em;
@@ -509,10 +562,17 @@
         text-align: center;
         padding: 0 1em;
     }
+
+        .tool h3 {
+            text-align: left;
+            padding-left: 20px;
+            font-size: 28px;
+        }
 }
 
-/* Laptops */
-@media (min-width: 1024px) and (max-width: 1439px) {
+
+
+@media (min-width: 901px) and (max-width: 1024px) {
     .portfolio-card {
         width: 80%;
         max-width: 900px;

@@ -17,16 +17,21 @@
 
         <div class="down">
 
-            <div id="navbar">
-                <h2 class="logo"><a href="#navbar">Abdullah NOLA</a></h2>
+            <div class="navbar" id="navBar">
+                <h2 class="logo"><a href="#navBar">Abdullah NOLA</a></h2>
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
+
                 <li><a href="#head-text">Home</a></li>
                 <li><a href= #about-me>About</a></li>
                 <li><a href="#experience">Projects</a></li>
                 <li><a href="./portfolio index.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
                 <li><a href="#proficiency">Language</a></li>
             </ul>
+
+            <div class="menu-icon" id="menuIcon">
+                &#9776; 
+            </div>
 
             </div>
     
@@ -120,27 +125,45 @@
                 <div id="proficiency">
                     <h2><span class="span-1">Tools</span> and <span class="span-1">Skills</span></h2>
 
-                    <ul class="majors">
+                    <ul class="majors" id="skillList">
                         <li><a href="#proficiency" class="present">Front-end</a></li>
                         <li><a class="majors-link" href="#proficiency">Software Development</a></li>
                         <li><a class="majors-link" href="#proficiency">Back-end</a></li>
                         <li><a  class="majors-link"href="#proficiency">Web Development</a></li>
                     </ul>
                     
+                    
                 </div>
 
                 <div class="tool">
-                    <div class="tools">
-                        <h3 class="span-1">Tools</h3>
-                        <ul>
+                    <div class="tool-flex">
+
+                        <div class="tool-h3">
+                            <h3 class="span-1">Tools</h3>
+                        </div>
+                        
+                        <ul class="tools">
                             <li class="span-1">Visual Studio Code</li>
                             <li class="span-1">Git</li>
                             <li class="span-1">GitHub</li>
                             <li class="span-1">Figma</li>
                         </ul>
+                        
                     </div>
+                    
                     <div class="skills">
-                        <h3 class="span-1">Skills</h3>
+
+                        <div class="small-screen">
+
+                            <div class="text">
+                                <h3 class="span-1">Skills</h3>
+                            </div>
+
+                            <div class="majors-icon" id="majorsIcon">
+                                &#9662;
+                            </div>
+
+                        </div>
                         <div class="skill">
                             <div class="skill-up">
                                 <h4> HTML </h4>
@@ -187,33 +210,6 @@
                                 <div class="skill-10"></div>
                             </div>
 
-                        <!--   <div class="skill-up">
-                                <h4> Bootstrap5 </h4>
-                                <h3> 80% </h3>
-                            </div>
-                            <div class="skill-down">
-                                <div class="skill-11"></div>
-                                <div class="skill-12"></div>
-                            </div>
-
-                            <div class="skill-up">
-                                <h4> Typescript </h4>
-                                <h3> 70% </h3>
-                            </div>
-                            <div class="skill-down">
-                                <div class="skill-13"></div>
-                                <div class="skill-14"></div>
-                            </div>
-
-                            <div class="skill-up">
-                                <h4> XML (Xamarin) </h4>
-                                <h3> 70% </h3>
-                            </div>
-                            <div class="skill-down">
-                                <div class="skill-15"></div>
-                                <div class="skill-16"></div>
-                            </div> -->
-
                         </div>
                     </div>
                 </div>
@@ -222,5 +218,22 @@
             </div>
 
         </div>
+
+        <script>
+            const menuIcon = document.getElementById('menuIcon');
+            const navLinks = document.getElementById('navLinks');
+
+            menuIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+
+            const majorsIcon = document.getElementById('majorsIcon');
+            const skillList = document.getElementById('skillList');
+
+            majorsIcon.addEventListener('click', () => {
+            skillList.classList.toggle('display');
+            });
+        </script>
+
 </body>
-</html>.
+</html>
